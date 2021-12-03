@@ -1,0 +1,179 @@
+.my-list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 118rem;
+    margin: auto;
+    margin-top: 8rem;
+    padding-bottom: 12rem;
+    .no-items {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    .movie-item-holder {
+        width: 20%;
+        padding: 1rem;
+        margin-top: 3rem;
+        .movie-item-image {
+            max-height: 31.5rem;
+            img {
+                max-width: 100%;
+                max-height: 31.5rem;
+                vertical-align: bottom;
+            }
+            .no-preview {
+                font-size: 1.8rem;
+                color: #fff;
+                min-height: 31.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .movie-item-info {
+            background-color: #111;
+            padding: 1rem;
+            h3 {
+                color: #fff;
+                font-size: 2.2rem;
+            }
+            .rating-holder {
+                margin-top: 0.5rem;
+            }
+            .description {
+                font-size: 1.2rem;
+                color: #fff;
+                margin-top: 0.5rem;
+            }
+        }
+        .description-body-btns {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            justify-content: flex-end;
+            button, a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8rem;
+                border-radius: 0.5rem;
+                border: none;
+                outline: none;
+                height: 3rem;
+                padding: 0 1rem;
+                cursor: pointer;
+                font-size: 1.2rem;
+                &.trailer-btn {
+                    color: #fff;
+                    background-color: #E50914;
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: #fc0b17;
+                    }
+                }
+                &.add-to-my-list-btn {
+                    color: #000;
+                    background-color: #ddd;
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .my-list-wrap {
+        max-width: 97rem;
+        .movie-item-holder {
+            width: 25%;
+            .movie-item-image {
+                max-height: none;
+                img {
+                    max-width: 100%;
+                    max-height: none;
+                }
+                .no-preview {
+                    min-height: 33.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .my-list-wrap {
+        max-width: 74rem;
+        .movie-item-holder {
+            width: 33.3%;
+            .movie-item-image {
+                max-height: none;
+                img {
+                    max-width: 100%;
+                    max-height: none;
+                }
+                .no-preview {
+                    min-height: 34rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .my-list-wrap {
+        max-width: 55rem;
+        .movie-item-holder {
+            width: 50%;
+            .movie-item-image {
+                max-height: none;
+                img {
+                    max-width: 100%;
+                    max-height: none;
+                }
+                .no-preview {
+                    min-height: 38.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .my-list-wrap {
+        max-width: 46rem;
+        .movie-item-holder {
+            width: 50%;
+            .movie-item-image {
+                max-height: none;
+                img {
+                    max-width: 100%;
+                    max-height: none;
+                }
+                .no-preview {
+                    min-height: 31.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480.98px) {
+    .my-list-wrap {
+        max-width: 30rem;
+        .movie-item-holder {
+            width: 100%;
+            .movie-item-image {
+                max-height: none;
+                img {
+                    max-width: 100%;
+                    max-height: none;
+                }
+                .no-preview {
+                    min-height: 42rem;
+                }
+            }
+        }
+    }
+}

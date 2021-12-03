@@ -1,0 +1,159 @@
+.home-services-holder {
+    background-color: #000;
+    .service-holder {
+        border-top: 1.2rem solid #222;
+        &:last-child{
+            border-bottom: 1.2rem solid #222;
+        }
+        .service-card {
+            padding: 1.5rem 0;
+            display: flex;
+            align-items: center;
+            max-width: 118rem;
+            margin: auto;
+            .service-card-text {
+                width: 50%;
+                color: #fff;
+                padding: 1rem;
+                h2 {
+                    font-size: 5rem;
+                    line-height: 5.8rem;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 3rem;
+                    line-height: 3.6rem;
+                }
+            }
+            .service-card-animation-holder {
+                padding: 1rem;
+                width: 50%;
+                .service-card-animation {
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        max-width: 100%;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .animation-card {
+                        position: absolute;
+                        top: 46%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 100%;
+                        height: 100%;
+                        max-width: 73%;
+                        max-height: 54%;
+                        video {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &.animation-cart-watch {
+                            max-height: 47%;
+                            max-width: 63%;
+                            top: 34%;
+                        }
+                    }
+                    .animation-card-download {
+                        position: absolute;
+                        bottom: 2rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        max-width: 33rem;
+                        width: 100%;
+                        height: 10rem;
+                        display: flex;
+                        align-items: center;
+                        z-index: 2;
+                        background-color: #000;
+                        border: 2px solid #222;
+                        border-radius: 1.5rem;
+                        padding: 0.8rem 1.2rem;
+                        .animation-card-image {
+                            img {
+                                height: 8rem;
+                                max-width: 100%;
+                            }
+                        }
+                        .animation-card-text {
+                            margin-left: 1rem;
+                            .first-para {
+                                color: #fff;
+                                font-size: 2.2rem;
+                                font-weight: 600;
+                            }   
+                            .second-para {
+                                color: #0071eb;
+                                font-size: 1.5rem;
+                                margin-top: 0.2rem;
+                            }
+                        }
+                        .animation-card-gif {
+                            width: 5rem;
+                            height: 5rem;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .home-services-holder {
+        .service-holder {
+            .service-card {
+                max-width: 97rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .home-services-holder {
+        .service-holder {
+            .service-card {
+                flex-direction: column;
+                max-width: 97rem;
+                text-align: center;
+                padding: 3rem 1rem;
+                &.column-reverse {
+                    flex-direction: column-reverse;
+                }
+                .service-card-text {
+                    padding: 1rem;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .home-services-holder {
+        .service-holder {
+            .service-card {
+                flex-direction: column;
+                max-width: 97rem;
+                text-align: center;
+                padding: 3rem 1rem;
+                &.column-reverse {
+                    flex-direction: column-reverse;
+                }
+                .service-card-text {
+                    h2 {
+                        font-size: 3rem;
+                        line-height: 3.8rem;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

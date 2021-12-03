@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    #root {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.app-wrap {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem 1fr 6rem;
+}
+
+main {
+    grid-area: main;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-holder {
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem 1rem;
+    .overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+    .form-elements {
+        position: relative;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 9rem 8rem 15rem 8rem;
+        width: 100%;
+        max-width: 50rem;
+        h2 {
+            font-size: 4rem;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 3rem;
+        }
+        .error-message {
+            color: #E50914;
+            font-size: 1.4rem;
+        }
+        form {
+            .input-wrap {
+                width: 100%;
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                .profile-img-input {
+                    width: 15.3rem;
+                    height: 3.5rem;
+                    padding: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: 3;
+                    cursor: pointer;
+                }
+                .profile-img-input + p {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: #fff;
+                    background-color: #E50914;
+                    display: inline-block;
+                    padding: 1rem 2rem;
+                }
+                
+                .profile-img-input:focus + p,
+                .profile-img-input:hover + p {
+                    background-color: #fc0b17;
+                    cursor: pointer;
+                }
+                .profile-img-input + p {
+                    cursor: pointer;
+                }
+            }
+            input {
+                background-color: #454545;
+                padding: 1.4rem 2rem;
+                border-radius: 0.4rem;
+                color: #888;
+                font-size: 1.8rem;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+            button {
+                display: inline-block;
+                background-color: #E50914;
+                color: #fff;
+                font-size: 1.8rem;
+                padding: 1.4rem 3rem;
+                margin-top: 1.5rem;
+                width: 100%;
+                border: none;
+                outline: none;
+                margin-top: 4rem;
+                border-radius: 0.4rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: #fc0b17;
+                    transition: 0.3s;
+                }
+            }
+        }
+        .form-redirect {
+            color: #fff;
+            font-size: 1.6rem;
+            margin-top: 8rem;
+            a {
+                color: #E50914;
+                &:hover {
+                    transition: 0.3s;
+                    color: #fc0b17;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .form-holder {
+        padding: 8rem 1rem;
+        .form-elements {
+            padding: 6rem 4rem 12rem 4rem;
+            max-width: 45rem;
+        }
+    }
+}

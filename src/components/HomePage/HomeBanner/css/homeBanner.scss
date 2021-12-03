@@ -1,0 +1,86 @@
+.home-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+    position: relative;
+    padding: 10rem 1.5rem;
+    .overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+    .home-banner-content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        max-width: 80rem;
+        h1 {
+            font-size: 7rem;
+            color: #fff;
+        }
+        .first-para {
+            font-size: 3rem;
+            color: #fff;
+            margin-top: 1.5rem;
+        }
+        .second-para {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 3.5rem;
+        }
+        a {
+            display: inline-block;
+            background-color: #E50914;
+            color: #fff;
+            font-size: 2rem;
+            padding: 2rem 3rem;
+            margin-top: 1.5rem;
+            &:hover {
+                background-color: #fc0b17;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .home-banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: calc(100vh - 7rem);
+        position: relative;
+        padding: 10rem 1.5rem;
+        .home-banner-content {
+            max-width: 90%;
+            h1 {
+                font-size: 5rem;
+            }
+            .first-para {
+                font-size: 2rem;
+                margin-top: 1.2rem;
+            }
+            .second-para {
+                font-size: 1.5rem;
+                margin-top: 2.8rem;
+            }
+            a {
+                font-size: 1.7rem;
+                padding: 1.8rem 2.7rem;
+            }
+        }
+    }
+}

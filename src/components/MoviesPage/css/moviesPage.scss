@@ -1,0 +1,115 @@
+.movies-page-holder {
+    padding-bottom: 12rem;
+    .genres-search-holder {
+        max-width: 118rem;
+        margin: auto;
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 400;
+        }
+        .genres-items-holder {
+            position: relative;
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8rem;
+                border-radius: 0.5rem;
+                border: none;
+                outline: none;
+                height: 5rem;
+                padding: 0 3rem;
+                cursor: pointer;
+                font-size: 1.8rem;
+                color: #fff;
+                background-color: #E50914;
+                &:hover {
+                    transition: 0.3s;
+                    background-color: #fc0b17;
+                }
+            }
+            ul {
+                position: absolute;
+                top: 5.5rem;
+                background-color: #E50914;
+                right: 0;
+                z-index: 9;
+                list-style: none;
+                min-width: 21rem;
+                padding: 2rem 0;
+                li {
+                    text-align: right;
+                    padding: 0.5rem 1rem;
+                    a {
+                        color: #fff;
+                        font-size: 1.8rem;
+                        &:hover {
+                            transition: 0.3s;
+                            color: #111;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .movies-page-holder {
+        .genres-search-holder {
+            max-width: 97rem;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .movies-page-holder {
+        .genres-search-holder {
+            max-width: 74rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .movies-page-holder {
+        .genres-search-holder {
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .movies-page-holder {
+        .genres-search-holder {
+            h3 {
+                font-size: 2rem;
+            }
+            .genres-items-holder {
+                button {
+                    gap: 0.8rem;
+                    height: 3rem;
+                    padding: 0 1rem;
+                    font-size: 1.2rem
+                }
+                ul {
+                    top: 3.5rem;
+                    padding: 1rem 0;
+                    min-width: 12rem;
+                    li {
+                        padding: 0.5 1rem;
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

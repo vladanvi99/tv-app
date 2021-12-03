@@ -1,0 +1,13 @@
+.rating-holder {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    .stars-holder {
+        color: #E50914;
+        font-size: 2rem;
+    }
+    .rating-num {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}

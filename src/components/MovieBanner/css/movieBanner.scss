@@ -1,0 +1,148 @@
+.movie-banner-holder {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 7rem);
+    padding: 10rem 1.5rem;
+    padding-top: 15rem;
+    position: relative;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .movie-banner-content {
+        position: relative;
+        z-index: 2;
+        max-width: 118rem;
+        margin: auto;
+        h1 {
+            font-size: 9rem;
+            color: #fff;
+            font-weight: 900;
+            max-width: 85rem;
+            line-height: 10rem;
+        }
+        .movie-info {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 4rem;
+            .release-date {
+                font-size: 1.7rem;
+                color: #fff;
+            }
+        }
+        .description {
+            color: #fff;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            max-width: 85rem;
+            margin-top: 2rem;
+        }
+        .banner-btns {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            button, a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8rem;
+                border-radius: 0.5rem;
+                border: none;
+                outline: none;
+                height: 5rem;
+                padding: 0 3rem;
+                cursor: pointer;
+                font-size: 1.8rem;
+                &.trailer-btn {
+                    color: #fff;
+                    background-color: #E50914;
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: #fc0b17;
+                    }
+                }
+                &.add-to-my-list-btn {
+                    color: #000;
+                    background-color: #ddd;
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .movie-banner-holder {
+        .movie-banner-content {
+            max-width: 97rem;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .movie-banner-holder {
+        .movie-banner-content {
+            max-width: 74rem;
+            h1 {
+                max-width: 100%;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .movie-banner-holder {
+        padding: 10rem 1.5rem;
+        .movie-banner-content {
+            max-width: 100%;
+            h1 {
+                font-size: 6rem;
+                font-weight: 900;
+                line-height: 7rem;
+            }
+            .movie-info {
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            .description {
+                font-size: 1.5rem;
+                line-height: 2rem;
+                margin-top: 1rem;
+            }
+            .banner-btns {
+                margin-top: 2rem;
+                button, a {
+                    gap: 0.8rem;
+                    height: 4rem;
+                    padding: 0 2rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .movie-banner-holder {
+        padding: 10rem 1.5rem;
+        .movie-banner-content {
+            max-width: 100%;
+            h1 {
+                font-size: 5rem;
+                line-height: 6rem;
+            }
+        }
+    }
+}
