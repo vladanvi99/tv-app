@@ -136,9 +136,9 @@
         .service-holder {
             .service-card {
                 flex-direction: column;
-                max-width: 97rem;
+                max-width: 90%;
                 text-align: center;
-                padding: 3rem 1rem;
+                padding: 1rem 1rem;
                 &.column-reverse {
                     flex-direction: column-reverse;
                 }
