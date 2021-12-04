@@ -143,6 +143,8 @@
                     flex-direction: column-reverse;
                 }
                 .service-card-text {
+                    width: 100%;
+                    max-width: 100%;
                     h2 {
                         font-size: 3rem;
                         line-height: 3.8rem;
